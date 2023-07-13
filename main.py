@@ -25,7 +25,7 @@ print(carro3.__dict__)
 print(Carros.__dict__)
 
 user1 = Cadastrouser('João',1234)
-
+user2= Cadastrouser('Miguel', 777222)
 #print(user1.__senha)
 
 #o metodo naming mangling é usadono python para forçar a exibição de um valor
@@ -36,3 +36,4 @@ print(dir(user1))
 print(user1._Cadastrouser__senha)
 
 print(user1.__dict__)
+print(user2.__dict__)
