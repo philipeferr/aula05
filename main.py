@@ -4,7 +4,7 @@
 from classe_carros import Carros
 from classes_atributos import Cadastrouser
 from classe_getter_setters import Vendasprodutos
-
+from classes_tipo_metodos import Livros
 ##intanciando objetos
 
 carro1 = Carros("Chevette","Chevrolet")
@@ -60,3 +60,11 @@ print(produto1.quantidade)
 print(produto2.quantidade)
 
 print(produto1.valor_total_compra)
+
+##Livros
+
+livro1 = Livros('O Pequeno Principe',"Esuperri",1960)
+livro2 = Livros('as cronicas de peter pan', 'maldova', 1930)
+
+livro1.imprime()
+livro1.anoPublicacao()

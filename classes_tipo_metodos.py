@@ -5,3 +5,15 @@
 ##  que leva o decorador @staticmethod
 ## 4- Privete Method (metodo privado == inutil)
 
+## 1- Metodos de Instancia
+class Livros():
+    ano_atual = 2023
+    def __init__(self, titulo, autor, ano):
+        self.titulo = titulo
+        self.autor = autor
+        self.ano  = ano
+    def imprime(self):
+        print("Esse livro é %s e o Autor %s"%(self.titulo,self.autor))
+
+    def anoPublicacao(self):
+        print("Tempo de publicação",self.ano_atual-self.ano,"anos")
