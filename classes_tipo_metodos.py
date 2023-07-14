@@ -10,7 +10,7 @@ import datetime
 
 ## 1- Metodos de Instancia
 class Livros():
-    ano_atual = datetime.datetime.year() #Atributo de classe
+    ano_atual = datetime.datetime.today().year #Atributo de classe
     def __init__(self, titulo, autor, ano):
         self.titulo = titulo
         self.autor = autor
