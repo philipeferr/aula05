@@ -75,3 +75,6 @@ livro1.anoPublicacao()
 livro3 = Livros.calculoAnoPubli("aprendendo excel",1998)
 
 print(livro3)
+
+print(livro1.geraisbn())
+print(livro1.__dict__)

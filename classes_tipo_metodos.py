@@ -5,6 +5,8 @@
 ##  que leva o decorador @staticmethod
 ## 4- Privete Method (metodo privado == inutil)
 
+import random
+
 ## 1- Metodos de Instancia
 class Livros():
     ano_atual = 2023
@@ -25,4 +27,8 @@ class Livros():
         calculo = anoclasse.ano_atual - ano
         return(nome,"tempo publicação é",str(calculo),"anos")
     
-    
+    #metodo estatico @staticmethod
+    @staticmethod
+    def geraisbn():
+        isbn =random.randint(0,10000)
+        return isbn
