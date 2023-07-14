@@ -52,9 +52,11 @@ print(produto2.quantidade)
 
 ##Ajustar a quantidade
 
-produto2.quantidade = 10
 produto1.quantidade = 20
+produto2.quantidade = 10
 
 
 print(produto1.quantidade)
 print(produto2.quantidade)
+
+print(produto1.valor_total_compra)

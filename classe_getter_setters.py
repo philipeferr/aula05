@@ -21,15 +21,21 @@ class Vendasprodutos():
         self.__valor = valor
 
 ## Aplicar uma abstração com Getter
-@property
-def produto(self):
-    return self.__produto
-
-@property
-def quantidade(self):
-    return self.__quantidade
+    @property
+    def produto(self):
+        return self.__produto
+    @property
+    def valor(self):
+        return self.__valor
+    @property
+    def quantidade(self):
+        return self.__quantidade
 ##Aplicação de modificações de uma ação ou valor de um metodo existente
 
-@quantidade.setter
-def quantidade(self,nova_quantidade):
-    self.__quantidade = nova_quantidade
+    @quantidade.setter
+    def quantidade(self,nova_quantidade):
+        self.__quantidade = nova_quantidade
+
+    @property
+    def valor_total_compra():
+        return self.__quantidade * self.__valor
