@@ -17,3 +17,12 @@ class Livros():
 
     def anoPublicacao(self):
         print("Tempo de publicação",self.ano_atual-self.ano,"anos")
+    
+    ## 2- Metodo de Classe, usamos o decorador @classmethod
+
+    @classmethod
+    def calculoAnoPubli(anoclasse,nome,ano):
+        calculo = anoclasse.ano_atual - ano
+        return(nome,"tempo publicação é",str(calculo),"anos")
+    
+    

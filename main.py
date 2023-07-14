@@ -68,3 +68,10 @@ livro2 = Livros('as cronicas de peter pan', 'maldova', 1930)
 
 livro1.imprime()
 livro1.anoPublicacao()
+
+
+#Metodo de classe precisamos passar a classe no começo
+
+livro3 = Livros.calculoAnoPubli("aprendendo excel",1998)
+
+print(livro3)
