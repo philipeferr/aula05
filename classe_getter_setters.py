@@ -37,5 +37,5 @@ class Vendasprodutos():
         self.__quantidade = nova_quantidade
 
     @property
-    def valor_total_compra():
+    def valor_total_compra(self):
         return self.__quantidade * self.__valor
