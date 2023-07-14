@@ -3,7 +3,7 @@
 
 from classe_carros import Carros
 from classes_atributos import Cadastrouser
-
+from classe_getter_setters import Vendasprodutos
 
 ##intanciando objetos
 
@@ -37,3 +37,24 @@ print(user1._Cadastrouser__senha)
 
 print(user1.__dict__)
 print(user2.__dict__)
+
+
+#produtos
+
+produto1 = Vendasprodutos('Feijao',10,9.50)
+produto2 = Vendasprodutos("Macarrao",5,6.60)
+
+#print(produto.__valor)
+
+print(produto1.produto)
+print(produto1.quantidade)
+print(produto2.quantidade)
+
+##Ajustar a quantidade
+
+produto2.quantidade = 10
+produto1.quantidade = 20
+
+
+print(produto1.quantidade)
+print(produto2.quantidade)
