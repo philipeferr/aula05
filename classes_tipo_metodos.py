@@ -6,10 +6,11 @@
 ## 4- Privete Method (metodo privado == inutil)
 
 import random
+import datetime
 
 ## 1- Metodos de Instancia
 class Livros():
-    ano_atual = 2023
+    ano_atual = datetime.datetime.year() #Atributo de classe
     def __init__(self, titulo, autor, ano):
         self.titulo = titulo
         self.autor = autor
